@@ -3,10 +3,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log('ROOTLAYOUT')
+  console.log('ROOTLAYOUT', crypto.randomUUID());
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
